@@ -2,7 +2,7 @@
 	"name": "emoji-fader",
 	"version": "0.1.0",
 	"private": true,
-	"repository": "https://github.com/shawnphoffman/emoji-fader",
+	"repository": "https://shawnphoffman.github.io/emoji-fader",
 	"dependencies": {
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
