@@ -18,6 +18,8 @@ const EmojiFader = ({ emojis, interval = 1000 }) => {
 		}
 	}, [emojis.length, index, interval])
 
+	if (!emojis) return null
+
 	return (
 		<span className="icon-wrapper">
 			<span className="icon">{emojis[nextIndex(index, emojis.length)]}</span>
@@ -30,7 +32,8 @@ const EmojiFader = ({ emojis, interval = 1000 }) => {
 }
 
 EmojiFader.propTypes = {
-	wizard: PropTypes.bool,
+	emojis: PropTypes.array,
+	interval: PropTypes.number,
 }
 
 export default EmojiFader
